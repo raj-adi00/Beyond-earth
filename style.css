@@ -1,0 +1,288 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#main-body {
+    display: flex;
+    flex-direction: column;
+}
+
+/*Navigation logo */
+#logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    flex-wrap: wrap;
+}
+
+#logo img {
+    height: 84px;
+    width: 99px;
+    border-radius: 59px;
+    border: 2px solid black;
+    margin: 7px 23px;
+    transition: all 0.5 ease-in-out;
+
+}
+
+#logo img:hover {
+    transform: scale(1.1);
+}
+
+.head {
+    font-size: 1.5rem;
+    font-family: Courgette;
+    margin: 5px;
+    font-weight: 700;
+}
+
+/* Navigation */
+#top {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-wrap: wrap;
+    height: 25vh;
+}
+
+#navbar {
+    margin: 2% 3%;
+    margin-left: 34%;
+}
+
+.navigation {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.option {
+    list-style: none;
+    color: black;
+    width: 167px;
+    height: 30px;
+    text-align: center;
+}
+
+.option a {
+    color: black;
+    text-decoration: none;
+    font-family: cursive;
+    font-size: 1rem;
+
+}
+
+#btn {
+    width: 198px;
+    height: 31px;
+    border: 2px solid black;
+    font-size: 1.1em;
+    font-weight: 600;
+    border-radius: 27px;
+    background-color: black;
+    color: white;
+    padding: 2px 2px;
+
+}
+
+#btn:hover {
+    cursor: pointer;
+}
+
+#top::before {
+    content: "";
+    height: 70%;
+    width: 100vw;
+    z-index: -1;
+    opacity: 0.;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: url('images/people-2591874_1920.jpg')no-repeat center center/cover;
+}
+
+@media(max-width:1238px) {
+    .navigation {
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    #top {
+        justify-content: space-evenly;
+    }
+}
+
+/*Headline*/
+#headline {
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    height: 26vh;
+    margin: 2%;
+    padding: 1%;
+    align-items: center;
+}
+
+.title-1 {
+    font-size: 3rem;
+    text-align: center;
+    font-weight: 700;
+}
+
+.title-2 {
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+.para {
+    font-size: 1.1rem;
+}
+
+.text {
+    margin: 17px 0px;
+}
+
+.btn {
+
+    padding: 9px;
+    border-radius: 25px;
+    background-color: #6e3232;
+    color: white;
+    font-size: 1.1rem;
+    margin: 17px 0px;
+    transition: all 1s ease-in-out;
+}
+
+.btn:hover {
+    cursor: pointer;
+    transform: scale(1.5);
+}
+
+/*Places*/
+#look-at {
+    margin: 9% 2%;
+}
+
+#places {
+    display: grid;
+    grid-gap: 4rem;
+    margin: 4% 3%;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+.visit-place img {
+    height: 179px;
+    width: 245px;
+}
+
+.visit-place {
+    text-align: center;
+}
+
+.site {
+    font-size: 1.2rem;
+    margin: 10px 0px;
+    font-weight: 600;
+}
+
+.discover-1,
+.discover-2 {
+    text-align: center;
+    display: block;
+}
+
+.discover-1 {
+    margin: 3px;
+    margin-top: 6px;
+    font-weight: 400;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.discover-2 {
+    margin: 15px 15px;
+    margin-top: 1px;
+    font-weight: 200;
+    font-size: 1.5rem;
+}
+
+.description {
+    margin: 10px 5px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.explore {
+    padding: 9px;
+    width: 120px;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    margin: 17px 0px;
+    transition: all 0.5s ease-in-out;
+    border: 2px solid brown;
+    font-weight: 500;
+}
+
+.explore:hover {
+    cursor: pointer;
+    border: none;
+    font-size: 1rem;
+    transform: skew(20deg);
+    color: white;
+    background-color: rgb(214, 59, 59);
+}
+
+/*Footer*/
+.social a img {
+    height: 30px;
+    width: 30px;
+    margin: 10px;
+    border-radius: 11px;
+}
+
+.facility a,
+.info a {
+    list-style: none;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.facility li,
+.info li {
+    list-style: none;
+    padding: 2px 0px;
+}
+
+#company {
+    font-size: 2rem;
+}
+
+#bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    bottom: 0px;
+    left: 0px;
+    color: white;
+    padding: 25px;
+    width: 100vw;
+}
+
+#bottom::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    height: 160%;
+    width: 100vw;
+    z-index: -1;
+    opacity: 0.8;
+}

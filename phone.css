@@ -1,0 +1,114 @@
+#top {
+    display: grid;
+    grid-template-areas: 'a a a a'
+        'b b b b';
+    grid-gap: 4%;
+    /* align-items: center; */
+    justify-content: center;
+    height: auto;
+
+}
+
+.head {
+    font-size: 1.2rem;
+}
+
+#logo {
+    grid-area: a;
+    position: static;
+}
+
+#navbar {
+    grid-area: b;
+    margin-left: 0%;
+}
+
+.option a {
+    font-size: 0.6rem;
+}
+
+#btn {
+    font-size: 0.8rem;
+    width: auto;
+}
+
+.title-2 {
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+.title-1 {
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 700;
+}
+
+.para {
+    font-size: 1rem;
+    text-align: center;
+}
+
+.content {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 12% 1%;
+}
+
+.discover-1 {
+    font-size: 1.5rem;
+    margin: 10px 0px;
+}
+
+.discover-2 {
+    font-size: 1.3rem;
+    margin: 10px 0px;
+    margin-bottom: 32px;
+}
+
+.visit-place img {
+    height: 135px;
+    width: 178px;
+}
+
+#look-at {
+    margin: 24% 0%;
+    margin-bottom: 17%;
+}
+
+.description {
+    margin: 8px 0px;
+}
+
+.visit-place {
+    width: 100%;
+}
+
+#places {
+    grid-gap: 1rem;
+}
+
+.explore {
+    padding: 5px;
+    width: 105px;
+    border-radius: 23px;
+    font-size: 0.6rem;
+    margin: 15px 0px;
+}
+
+#bottom::before {
+    height: 110%;
+}
+
+.facility {
+    min-width: 200px;
+}
+
+.info {
+    margin-top: 10px;
+}
+
+.option {
+    height: 21px;
+}
